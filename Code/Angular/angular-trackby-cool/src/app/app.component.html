@@ -1,0 +1,17 @@
+<div class="container">
+	<div class="col">
+		<div>
+			<ul class="list-group">
+				<li *ngFor="let item of collection; trackBy: trackByFuntion"  class="list-group-item">
+					{{item.id}}
+				</li>
+			</ul>
+		</div>
+
+		<div>
+			<button class="btn btn-primary" (click)="getItems()">
+      Refresh items
+      </button>
+		</div>
+	</div>
+</div>

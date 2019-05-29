@@ -1,0 +1,20 @@
+<hello name="{{ name }}"></hello>
+<p>
+	Start editing to see some magic happen :)
+  <input class="btn" type="button" (click)="name='angular 4'" value="change name" />
+</p>
+
+<div>
+	<table class="table">
+		<tr>
+			<th>Name</th>
+			<th>Points</th>
+			<th>Title</th>
+		</tr>
+		<tr *ngFor="let user of userList">
+			<td>{{user.name}}</td>
+			<td>{{user.points}}</td>
+			<td>{{getTitle(user.points)}}</td>
+		</tr>
+	</table>
+</div>

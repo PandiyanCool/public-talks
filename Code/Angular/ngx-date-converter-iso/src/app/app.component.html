@@ -1,0 +1,36 @@
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<table class="table">
+				<tr>
+					<th scope="col">Pipe name</th>
+          <th scope="col">Description</th>
+					<th scope="col">Input</th>
+					<th scope="col">Output</th>
+				</tr>
+				<tr>
+          <td>dateConversion: 'isoToLocale'</td>
+					<td scope="row">
+						Iso to Local Date
+					</td>
+					<td>{{isoDate}}</td>
+					<td>
+						{{ isoDate | dateConversion: 'isoToLocale'}}
+					</td>
+				</tr>
+				<tr>
+          <td>
+            dateConversion: 'dateToIsoString'
+          </td>
+					<td scope="row">
+						Date to ISO
+					</td>
+					<td>{{currentDate}}</td>
+					<td>
+						{{ currentDate | dateConversion: 'dateToIsoString'}}
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>

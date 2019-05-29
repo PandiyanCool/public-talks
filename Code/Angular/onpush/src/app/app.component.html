@@ -1,0 +1,12 @@
+<hello name="{{ name | dollarMoney}}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<input type="button" value="Add" (click)="AddFruits()">
+
+
+<div *ngFor="let fruit of fruits">
+{{fruit.name}} - {{fruit.price | dollarMoney}}
+
+</div>

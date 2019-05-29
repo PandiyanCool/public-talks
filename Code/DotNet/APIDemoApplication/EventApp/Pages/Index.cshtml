@@ -1,0 +1,29 @@
+﻿@page "/"
+@using EventClient
+@inject EventClient.Client EventClient
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<h2>Events</h2>
+
+
+
+@functions {
+    IEnumerable<Event> events;
+    protected override async Task OnInitAsync()
+    {
+    events = await EventClient.ApiEventsGetAsync();
+    }
+    }
+
+    @foreach (var item in events)
+    {
+        <div>
+            @item.Organiser
+            <hr />
+        </div>
+    }

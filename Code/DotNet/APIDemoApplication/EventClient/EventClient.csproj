@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="NSwag.MSBuild" Version="11.20.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  
+<Target Name="NSwag" BeforeTargets="Build">
+  <Exec Command="$(NSwagExe) swagger2csclient /input:event-swagger.json /namespace:$(RootNamespace) /InjectionHttpClient:true /UseBaseUrl:false /output:EventClient.cs"></Exec>
+</Target>
+
+</Project>
