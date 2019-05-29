@@ -1,0 +1,12 @@
+p {
+  font-family: Lato;
+}
+
+button{
+  margin: 0 5px;
+  border: none;
+  padding: 10px 15px;
+  background: #287abf;
+  color: #fff;
+  cursor: pointer;
+}

@@ -1,0 +1,12 @@
+<div style="height:200px; overflow-y:auto;" #scroll>
+	<div *ngFor="let i of list">
+		{{i.name}}
+		<br>
+	</div>
+</div>
+
+
+<button (click)="Add()">Add</button>
+
+<button (click)="scrollToTop()">Scroll to top</button>
+<button (click)="scrollBottom()">Scroll to bottom</button>
