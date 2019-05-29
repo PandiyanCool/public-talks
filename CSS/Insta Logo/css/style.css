@@ -1,0 +1,11 @@
+body{ width: 100vh; height: 100vh;}
+
+.icon {
+  margin: 1px;
+  width: 5em;
+  height: 5em;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(to top right, yellow 0%, yellow 5%, red 45%, #ff1493 60%, #1e90ff 90%);
+}

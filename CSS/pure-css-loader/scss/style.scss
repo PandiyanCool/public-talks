@@ -1,0 +1,44 @@
+.main-container {
+  display: flex;
+  height: 90vh;
+}
+.container {
+  animation: rotate linear 4s infinite;
+  height: 200px;
+  margin: auto;
+  width: 200px;
+}
+.bar {
+  position: absolute;
+  border-top: 2px solid green;
+  border-right: 2px solid red;
+  border-bottom: 2px solid violet;
+  border-left: 2px solid orange;
+  width: 10px;
+  height: 40px;
+  top: calc(50% - 70px);
+  left: calc(50% - 3px);
+  transform-origin: 3px 70px;
+  border-radius:50%;
+}
+
+
+//vary opacity and rotation angle for each bar
+//using scss for loop and interpolation
+@for $i from 0 through 10 {
+  .bar-#{$i} {
+    opacity: 0.1 * ($i +1);
+    transform: rotate($i*36deg);
+  }
+}
+
+//starting and ending point of animation
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

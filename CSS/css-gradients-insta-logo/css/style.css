@@ -1,0 +1,19 @@
+body {
+  width: 100vh;
+  height: 100vh;
+}
+
+.icon {
+  margin: 1px;
+  width: 5em;
+  height: 5em;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  // background:  linear-gradient(to bottom, #d047d1, #d047d1, #ff0000, #ff0000);
+  // background: linear-gradient(324deg, #FA709A 10%, #FEE140 80%);
+  background: linear-gradient(to top right, yellow 0%, yellow 5%, red 45%, #ff1493 60%, #1e90ff 90%);
+    // background: linear-gradient(to top right, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  
+  
+}

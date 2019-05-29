@@ -1,0 +1,89 @@
+.main-container {
+  display: flex;
+  height: 90vh;
+}
+
+.container {
+  animation: rotate linear 4s infinite;
+  height: 200px;
+  margin: auto;
+  width: 200px;
+}
+
+.bar {
+  position: absolute;
+  border-top: 2px solid green;
+  border-right: 2px solid red;
+  border-bottom: 2px solid violet;
+  border-left: 2px solid orange;
+  width: 10px;
+  height: 40px;
+  top: calc(50% - 70px);
+  left: calc(50% - 3px);
+  transform-origin: 3px 70px;
+  border-radius: 50%;
+}
+
+.bar-0 {
+  opacity: 0.1;
+  transform: rotate(0deg);
+}
+
+.bar-1 {
+  opacity: 0.2;
+  transform: rotate(36deg);
+}
+
+.bar-2 {
+  opacity: 0.3;
+  transform: rotate(72deg);
+}
+
+.bar-3 {
+  opacity: 0.4;
+  transform: rotate(108deg);
+}
+
+.bar-4 {
+  opacity: 0.5;
+  transform: rotate(144deg);
+}
+
+.bar-5 {
+  opacity: 0.6;
+  transform: rotate(180deg);
+}
+
+.bar-6 {
+  opacity: 0.7;
+  transform: rotate(216deg);
+}
+
+.bar-7 {
+  opacity: 0.8;
+  transform: rotate(252deg);
+}
+
+.bar-8 {
+  opacity: 0.9;
+  transform: rotate(288deg);
+}
+
+.bar-9 {
+  opacity: 1;
+  transform: rotate(324deg);
+}
+
+.bar-10 {
+  opacity: 1.1;
+  transform: rotate(360deg);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
