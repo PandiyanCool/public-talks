@@ -1,0 +1,28 @@
+{
+  "name": "divide-by-thirteen",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": " "
+  },
+  "author": {
+    "name": "Pandiyan",
+    "email": "pandiyanwin@outlook.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": " /issues"
+  },
+  "main": "divide-by-thirteen.umd.js",
+  "module": "divide-by-thirteen.js",
+  "jsnext:main": "divide-by-thirteen.js",
+  "typings": "divide-by-thirteen.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
