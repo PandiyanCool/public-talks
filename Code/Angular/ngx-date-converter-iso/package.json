@@ -8,7 +8,7 @@
     "zone.js": "0.8.26",
     "@angular/core": "6.1.1",
     "@angular/forms": "6.1.1",
-    "@angular/common": "6.1.1",
+    "@angular/common": "20.3.25",
     "@angular/router": "6.1.1",
     "@angular/compiler": "6.1.1",
     "ngx-date-converter": "0.1.4",
